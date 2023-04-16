@@ -1,2 +1,2 @@
 # Lab 2 - Starter
-https://golden-gnome-5f7c28.netlify.app/
+https://terryyan26.github.io/Lab2_Starter/
