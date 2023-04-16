@@ -7,7 +7,8 @@
   <meta name="keywords" content="HTML">
   <meta name="author" content="Ka Wing Yan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <script src="script.js"></script> -->
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -17,12 +18,13 @@
                 <a href="#Agenda">Agenda</a> |
                 <a href="#New">New</a> |
                 <a href="#Nextdiscussion">Next time discussion</a> |
+            </nav>
         </header>
         <main>
            
             <section>
                 <div>
-                    <h2 clss="Attendance">Attendance</h2>
+                    <h2 class="Attendance">Attendance</h2>
                 </div>
                     <ul>
                         <li>Terry Yan</li>
@@ -38,7 +40,7 @@
                     <ol>
                 <li>Mary</li>
                 <li>Jacky</li>
-                    </ul>
+                    </ol>
                 
             </section>
             <hr>
@@ -50,8 +52,9 @@
                 <p> We have to write a site diagram and it should have list <b>function</b>, <b>website style</b>,<b>website purpose</b>.</p>
                 <h3>Design a Wireframe</h3>
                 <p> It is about the UI design and draw the Wireframe first.</p>
+                <h3>Unfinished:</h3>
                 <span>
-                    <h3>Unfinished:</h3>
+                    
                     <i>plan for schedule</i>
                 </span>
             </section>
@@ -59,13 +62,14 @@
             <h3>Diagram</h3><br>
             <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="JS"><br>
             <audio controls>
-                <source src="horse.mp3" type="audio/mpeg">
+                <source src="/source/sample1.mp3" type="audio/mpeg">
               Your browser does not support the audio element.
               </audio><br>
-              <video width="320" height="240" controls>
-                <source src="movie.mp4" type="video/mp4">
+              <video width="560" height="315" controls>
+                <source src="/source/sample.mp4" >
               Your browser does not support the video tag.
               </video><br>
+              
             <h3 class="New">New:</h3>
             <details>
                 <summary>Terry </summary>
@@ -84,7 +88,7 @@
                  <legend>Problem Details:</legend>
                  <label for="Contact">Choose your Common Contact:</label>
                  <input list="Contacts" name="Contact" id="Contact">
-                 <datalist id="Contacts"></option>
+                 <datalist id="Contacts">
                  <option value="IG">
                  <option value="FaceBook">
                  <option value="email">
@@ -92,13 +96,13 @@
                  <option value="Wechat">
                  <option value="ETC(please add that in the comment)">
   </datalist><br>
-                 <label for="fname">Name:</label>
+                 <label for="lname">Name:</label>
                  <input type="text" id="lname" name="lname"><br>
                  <p>Please select your free date for next schedule:</p>
-                 <label for="start">Date:</label>
-                <input type="date" id="timer" name="timer"value="timer" min="2023-04-10" max="2024-07-31">
+                 <label for="timer">Date:</label>
+                <input type="date" id="timer"  min="2023-04-10" max="2024-07-31">
                  <p>Please select your free time for this date:</p>
-                 <label for="javascript">Time:</label><br>
+                 <label for="option1">Time:</label><br>
                  <input type="checkbox" id="option1" name="option1" value="option1">
                  <label for="option1"> 8:00-9:00 am</label><br>
                  <input type="checkbox" id="option2" name="option2" value="option2">
@@ -107,9 +111,9 @@
                  <label for="option3"> 3:00-4:00pm</label><br>
                  <p>Are you enjoy this meeting?</p>
                  <input type="radio" id="like" name="like" value="like">
-                 <label for="o1">👍</label>
+                 <label for="like">👍</label>
                  <input type="radio" id="unlike" name="unlike" value="unlike">
-                 <label for="o2">👎</label><br>
+                 <label for="unlike">👎</label><br>
                
                  <p><label for="comment">Comment Box:</label></p>
                  <textarea id="comment" name="comment" rows="4" cols="50">Leave your idea in here!  
@@ -123,8 +127,8 @@
                   <option value="biolibary">UCSD Sally's Wong Libary</option>
                   <option value="ETC">ETC(please add that in the comment)</option>
                 </select><br>
-                <input type="submit" value="Submit">
-                </fieldset>
+                <button type="button">Submit</button>
+            </fieldset>
                </form>
         </main>
         <footer>
